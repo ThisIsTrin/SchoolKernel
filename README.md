@@ -1,0 +1,2 @@
+# SchoolKernel
+School Managment Systems
