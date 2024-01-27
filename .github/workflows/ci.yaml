@@ -14,12 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
+      working-directory: ./backend
       uses: actions/checkout@v4
     - name: Setup Node 
-    uses: actions/setup-node@v2
+      working-directory: ./backend
+      uses: actions/setup-node@v2
       with:
         node-version: '16'
     - name: install
+      working-directory: ./backend
       run: yarn install
     - name: ESLint
+      working-directory: ./backend
       run: yarn run lint
