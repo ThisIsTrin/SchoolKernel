@@ -12,7 +12,7 @@ The old school system lacks modern function.
 
 ## Roadmap
 
-- [] Develop Essentials Functionalaity
+- [ ] Develop Essentials Functionalaity
 
 See the [open issues](https://github.com/ThisIsTrin/SchoolKernel/issues) for a full list of proposed features (and known issues).
 
