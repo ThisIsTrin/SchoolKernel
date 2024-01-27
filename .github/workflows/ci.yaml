@@ -13,20 +13,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set Node.js 16.x
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v1
+      - uses: stefanoeb/eslint-action@1.0.2
         with:
-          node-version: 16.x
-
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install # will run `yarn install` command
-
-      - name: ESLINT
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: lint 
-          dir: 'backend'
+          files: backend/src
