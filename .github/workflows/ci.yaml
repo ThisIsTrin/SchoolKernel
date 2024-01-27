@@ -16,12 +16,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Setup Node 
+      working-directory: backend
       uses: actions/setup-node@v2
       with:
         node-version: '16'
     - name: install
-      working-directory: ./backend
+      working-directory: backend
       run: yarn install
     - name: ESLint
-      working-directory: ./backend
+      working-directory: backend
       run: yarn run lint
